@@ -21,32 +21,24 @@ body {
 	z-index: 1;
 
 }
-#apDiv2 {
-	position: center;
-	width: 200px;
-	height: 115px;
-	z-index: 2;
 
-}
 </style>
-<link href="SpryAssets/SpryMenuBarVertical.css" rel="stylesheet" type="text/css" />
+<link href="SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
 <meta name="keywords" content="Moz 's Research &amp; Works" />
 <script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
 </head>
 
 <body>
 <div id="apDiv1"></div>
-<img src="pic/title.png" width="800" height="200" />
-<div id="apDiv2">
-  <ul id="MenuBar1" class="MenuBarVertical">
-    <li><a href="#">Geen Roof(IoT)</a>    </li>
+<p><img src="pic/title.png" width="800" height="200" />
+</p>
+<ul id="MenuBar1" class="MenuBarHorizontal">
+  <li><a href="#">Green Roof</a>  </li>
 <li><a href="#">Information</a></li>
-  </ul>
-</div>
+</ul>
+<p>&nbsp;</p>
 <script type="text/javascript">
-var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"SpryAssets/SpryMenuBarDownHover.gif", imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
 </script>
 </body>
 </html>
-
-
