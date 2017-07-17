@@ -47,7 +47,7 @@ ul.MenuBarHorizontal ul
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
-	font-size: 100%;
+	font-size: 110%;
 	z-index: 1020;
 	cursor: default;
 	width: 8.2em;
@@ -93,22 +93,23 @@ ul.MenuBarHorizontal a
 {
 	display: block;
 	cursor: pointer;
-	background-color: #EEE;
+	background-color: #C30;
 	padding: 0.5em 0.75em;
-	color: #333;
-	text-decoration: none;
+	color: #FFF;
+	text-decoration: overline;
+	font-family: Verdana, Geneva, sans-serif;
 }
 /* Menu items that have mouse over or focus have a blue background and white text */
 ul.MenuBarHorizontal a:hover, ul.MenuBarHorizontal a:focus
 {
-	background-color: #009;
+	background-color: #0CC;
 	color: #FFF;
 	font-size: 28px;
 }
 /* Menu items that are open with submenus are set to MenuBarItemHover with a blue background and white text */
 ul.MenuBarHorizontal a.MenuBarItemHover, ul.MenuBarHorizontal a.MenuBarItemSubmenuHover, ul.MenuBarHorizontal a.MenuBarSubmenuVisible
 {
-	background-color: #33C;
+	background-color: #069;
 	color: #FFF;
 }
 
