@@ -41,14 +41,11 @@ img[4] = new Image(); img[3].src = "pic/IMG_6012.png";
 function start() 
 {
 	if(current >=img.length) current = 0
-	document.body.background=img[current].src
+	document.imgs.src = img[current].src
+	
 	setTimeout("start()",speed);
 	current++
 }
-
-function go() 
-{window.location = url[current]}
-//-->
 </SCRIPT>
 
 </head>
