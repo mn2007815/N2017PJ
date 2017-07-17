@@ -45,14 +45,34 @@ setTimeout(changeImage,3000);
 </script>
 
 
+<SCRIPT Language="JavaScript">
+var speed = 5000
+var img= new Array()
+var url= new Array()
+var current = 0
+img[0] = new Image(); img[0].src = "pic/IMG_6008.png";
+img[1] = new Image(); img[1].src = "pic/IMG_6009.png";
+img[2] = new Image(); img[2].src = "pic/IMG_6010.png";
+img[3] = new Image(); img[3].src = "pic/IMG_6011.png";
+img[4] = new Image(); img[3].src = "pic/IMG_6012.png";
+function start() 
+{
+current++
+if(current >=img.length) current = 0
+document.imgs.src = img[current].src
+setTimeout("start()",speed);
+}
+function go() 
+{window.location = url[current]}
+</SCRIPT>
+
 
 </head>
+<body onLoad="setTimeout('start()',speed);">
+<a href="javascript:go()"><img src="icon1.gif" name="imgs"></a>
+
+
  
-<body>  
-<script type="text/javascript">
-window.onload = rapidChange();
-</script>
-<asp:Image ID="img1" runat= server/>
 
 <center>
 <div id="apDiv1"></div>
