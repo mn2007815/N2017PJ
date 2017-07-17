@@ -28,30 +28,31 @@ body {
 <script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
 
 
-
-
-</head>
-<body onload='setInterval("changeBG()",1000)'>
-<script>
+<SCRIPT Language="JavaScript">
 var speed = 5000
 var img= new Array()
-var url= new Array()
 var current = 0
 img[0] = new Image(); img[0].src = "pic/IMG_6008.png";
 img[1] = new Image(); img[1].src = "pic/IMG_6009.png";
 img[2] = new Image(); img[2].src = "pic/IMG_6010.png";
 img[3] = new Image(); img[3].src = "pic/IMG_6011.png";
 img[4] = new Image(); img[3].src = "pic/IMG_6012.png";
-function changeBG()
+
+function start() 
 {
-	current++
 	if(current >=img.length) current = 0
 	document.body.background=img[current].src
 	setTimeout("start()",speed);
+	current++
 }
-</script>
 
- 
+function go() 
+{window.location = url[current]}
+//-->
+</SCRIPT>
+
+</head>
+<BODY onLoad="setTimeout('start()',speed);">
 
 <center>
 <div id="apDiv1"></div>
