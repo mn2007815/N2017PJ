@@ -29,34 +29,6 @@ body {
 
 
 
-<script type="text/javascript">
-var char = ["pic/IMG_6008.png","pic/IMG_6009.png","pic/IMG_6010.png","pic/IMG_6011.png","pic/IMG_6012.png"];
-var i = 0;
-function changeImage()
-{
-if (i >= char.length) {i = 0;}
-doucument.getElementById(img1).ImageUrl = char[i];
-i++;
-}
-function rapidChange()
-{
-setTimeout(changeImage,3000);
-}
-</script>
-
-
-
-function start() 
-{
-current++
-if(current >=img.length) current = 0
-document.imgs.src = img[current].src
-setTimeout("start()",speed);
-}
-function go() 
-{window.location = url[current]}
-</SCRIPT>
-
 
 </head>
 <body onload='setInterval("changeBG()",1000)'>
